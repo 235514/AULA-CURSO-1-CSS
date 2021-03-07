@@ -4,10 +4,46 @@ body   { background:#ccc ;
 
       }
 
-.hero  { background-image: url(../imagens/bg-3.jpg);
+.hero  { background-image: url(../imagens/bg-3.jpg); 
          height: 650px;   
          background-position: right center;
         background-size:cover;
        }
 
-.hero-content { }
+.hero-content { text-align: center;  /* começa com . é uma classe*/
+                color:white;
+                margin-top: 150px;
+       }
+.hero-content h1 {font-size:46px ;    /* ele é um descendente*/
+                  text-transform: uppercase;
+                  text-shadow: 3px 3px 2px #333 ; 
+       } 
+main { width: 80%;
+      margin: auto;
+             
+      }
+.content-selection {background-color: white;  
+                    padding: 15px;
+                    margin-top: 15px;
+                    
+      }
+
+.content-selection h2 { 
+                        font-size: 20px;
+                        color: rgb(0, 0, 0);
+                        background: #ccc;
+                        padding: 15px;
+                        border-bottom: solid 2px rgb(156, 137, 137);      }
+
+footer{ background-color: #333;
+        padding: 10px;
+        
+        
+      }      
+
+footer p { color: white;
+           font-size: 20px;
+           text-align: center;
+           text-shadow: 3px 3px 5px rgb(156, 137, 137)
+
+}
