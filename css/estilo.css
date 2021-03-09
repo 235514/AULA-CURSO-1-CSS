@@ -8,13 +8,16 @@ body   { background:#ccc ;
          height: 650px;   
          background-position: right center;
         background-size:cover;
+        border-top: solid 1px transparent; /* é preciso colocar borda para manter alinhamento das li, se tirar a imgem vai pra baixo */
        }
 
 .hero-content { text-align: center;  /* começa com . é uma classe*/
                 color:white;
-                margin-top: 150px;
+                margin-top: 180px; 
        }
-.hero-content h1 {font-size:46px ;    /* ele é um descendente*/
+.hero-content h1 {font-size:46px ;    /* ele é um descendente, significa q esse hero vai mudar o
+       q tiver nele sem 
+      precisar criar outra classe*/
                   text-transform: uppercase;
                   text-shadow: 3px 3px 2px #333 ; 
        } 
@@ -33,7 +36,42 @@ main { width: 80%;
                         color: rgb(0, 0, 0);
                         background: #ccc;
                         padding: 15px;
-                        border-bottom: solid 2px rgb(156, 137, 137);      }
+                        border-bottom: solid 2px rgb(156, 137, 137);  
+
+}
+/* essa classe com a propriede display, serviu para
+trabalharmos com as listas uma do lado da
+outra já que as lista sao por natureza um 
+em baixo da  outra (block) criamos essa propriedade 
+para alinhar ela com linha e tiramos o liststyle aqui em baixo */
+
+.hero ul { text-align: right;
+           margin: 40px 15px;
+             
+}
+
+.hero nav li {         display:  inline-block;   
+                       list-style: none;  /* retira a margin padrao da lista e a bolinha*/
+                       border: 1px solid white ;
+                       margin: 5px;
+
+      }
+
+.hero nav a { background:rgba(0,0,0,0.3);
+              display: block;                 
+              padding: 15px;
+              color: white;
+              text-decoration: none; 
+              text-transform: uppercase;
+              font-size: 14px; 
+            }
+              
+.hero nav a:hover { background:rgba(0,0,0,0.5);
+            
+             
+}
+
+
 
 footer{ background-color: #333;
         padding: 10px;
