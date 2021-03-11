@@ -25,6 +25,16 @@ main { width: 80%;
       margin: auto;
              
       }
+
+.card { display:inline-block;
+        margin:45px ;
+        
+      }
+.card p{ text-align: center;
+         
+       }
+
+
 .content-selection {background-color: white;  
                     padding: 15px;
                     margin-top: 15px;
